@@ -1,0 +1,200 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(128deg, #4be2ff, #9b59b6);
+    background-size: 400% 400%;
+    -webkit-animation: backgroundColor 16s ease infinite;
+    -moz-animation: backgroundColor 16s ease infinite;
+    animation: backgroundColor 16s ease infinite;
+}
+
+@-webkit-keyframes backgroundColor {
+    0% {
+        background-position: 0% 47%
+    }
+    50% {
+        background-position: 100% 54%
+    }
+    100% {
+        background-position: 0% 47%
+    }
+}
+
+@-moz-keyframes backgroundColor {
+    0% {
+        background-position: 0% 47%
+    }
+    50% {
+        background-position: 100% 54%
+    }
+    100% {
+        background-position: 0% 47%
+    }
+}
+
+@keyframes backgroundColor {
+    0% {
+        background-position: 0% 47%
+    }
+    50% {
+        background-position: 100% 54%
+    }
+    100% {
+        background-position: 0% 47%
+    }
+}
+
+
+/* typography */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 1.5rem 0 0 0;
+}
+
+h2 {
+    padding: 0 0 0.5rem 0;
+    border-bottom: 2px ridge black;
+}
+
+#scoreNumbers {
+    font-size: 3rem;
+}
+
+p {
+    padding: 0.3rem 0;
+}
+
+
+/* layout */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+img {
+    width: 512px;
+}
+
+.main-content {
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+
+/* the select input */
+
+select {
+    color: black;
+    padding: 8px;
+    margin-left: 0.5rem;
+    border-radius: 15px;
+    border: 1px solid royalblue;
+}
+
+option {
+    background-color: #6095c7;
+}
+
+
+/* buttons */
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: calc(33.333%);
+    padding: 0.6rem 0;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    color: white;
+}
+
+#playerOne {
+    background-color: rgb(87, 224, 87);
+}
+
+#playerTwo {
+    background-color: rgb(67, 39, 228);
+}
+
+#reset {
+    background-color: rgb(228, 39, 80);
+    text-decoration: underline;
+    letter-spacing: 0.5rem;
+}
+
+
+/* winner/loser animations */
+
+.loser-text {
+    transition: color 800ms ease-in-out;
+    color: rgb(243, 56, 56);
+}
+
+.winner-text {
+    transition: color 800ms ease-in-out;
+    color: rgb(87, 224, 87);
+}
+
+.winner-background {
+    background: linear-gradient(182deg, #e3df2d, #26ec62);
+    background-size: 400% 400%;
+    -webkit-animation: winnerBg 7s ease infinite;
+    -moz-animation: winnerBg 7s ease infinite;
+    animation: winnerBg 7s ease infinite;
+}
+
+@-webkit-keyframes winnerBg {
+    0% {
+        background-position: 25% 0%
+    }
+    50% {
+        background-position: 76% 100%
+    }
+    100% {
+        background-position: 25% 0%
+    }
+}
+
+@-moz-keyframes winnerBg {
+    0% {
+        background-position: 25% 0%
+    }
+    50% {
+        background-position: 76% 100%
+    }
+    100% {
+        background-position: 25% 0%
+    }
+}
+
+@keyframes winnerBg {
+    0% {
+        background-position: 25% 0%
+    }
+    50% {
+        background-position: 76% 100%
+    }
+    100% {
+        background-position: 25% 0%
+    }
+}

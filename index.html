@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="#">
+    <title>Score Keeper</title>
+</head>
+
+<body>
+    <h1>Let's play!</h1>
+    <div class="container">
+        <img src="img/img.jpg" alt="ping pong image">
+        <div class="main-content">
+            <h2>Ping Pong Score Keeper:</h2>
+            <p id="scoreNumbers">
+                <span id="playerOneScore">0
+                </span> to
+                <span id="playerTwoScore">
+                    0
+                </span>
+            </p>
+            <p>Use the buttons to gain points!
+            </p>
+            <p>
+                <b>
+                    Playing to
+                </b>
+                <select name="selectMenu" id="selectMenu">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                </select>
+                <span style="font-size: 13px;">(changing the score mid-game will restart the game)</span>
+        </div>
+
+        <div class="button">
+            <button id="playerOne">+1 playerOne</button>
+            <button id="playerTwo">+1 playerOne</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="js/index.js">
+        let FF_FOUC_FIX;
+    </script>
+</body>
+
+</html>
